@@ -1,0 +1,691 @@
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 13.33333333vw;
+}
+body {
+  font-size: 0.16rem;
+}
+#root {
+  position: relative;
+  width: 7.5rem;
+  height: 13.34rem;
+  overflow: hidden;
+}
+.top {
+  position: fixed;
+  background-color: white;
+  z-index: 1;
+}
+.title {
+  width: 7.5rem;
+	height: 0.97rem;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.title.title1 {
+  position: fixed;
+}
+.title>div:nth-of-type(1) {
+  width: 4rem;
+	height: 0.38rem;
+	font-family: SourceHanSansCN-Medium;
+  font-size: 0.38rem;
+  line-height: 0.38rem;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rem;
+  color: #000000;
+  margin-left: 0.36rem;
+}
+.title>div:nth-of-type(2) {
+  width: 0.43rem;
+  height: 0.1rem;
+  margin-right: 0.28rem;
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+}
+.title>div:nth-of-type(2) div {
+  width: 0.1rem;
+  height: 0.1rem;
+  border-radius: 50%;
+  background-color: black;
+}
+.title .icon {
+  padding-right: 0.3rem;
+}
+.box1 {
+  height: 0.6rem;
+  width: 7.5rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.box1 .icon {
+  width: 0.46rem;
+  height: 0.48rem;
+  color: #44c2d9;
+  margin-right: 0.34rem;
+}
+.box1 .interfaceSelection {
+  height: 0.6rem;
+  width: 6.7rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+.box1 .interfaceSelection .option {
+  width: 0.38rem;
+  height: 0.6rem;
+  line-height: 0.4rem;
+  text-align: center;
+	font-family: SourceHanSansCN-Regular;
+	font-size: 0.4rem;
+	font-weight: normal;
+	font-stretch: normal;
+  letter-spacing: 0rem;
+  display: flex;
+  justify-content: center;
+  white-space: nowrap;
+  color: #32d6b9;
+  box-sizing: border-box;
+  border-bottom: 0.02rem solid #32d6b9;
+}
+.box1 .interfaceSelection .option.unselected {
+  border: none;
+  color: #bababa;
+}
+.menu {
+  width: 6.86rem;
+  height: 0.64rem;
+  margin: 0.48rem auto 0;
+  overflow: auto;
+  position: relative;
+}
+.menu div {
+  white-space: nowrap;
+  position: absolute;
+  width: 7.73rem;
+  top: 0;
+  left: 0;
+}
+.menu span {
+	font-family: SourceHanSansCN-Regular;
+	font-size: 0.34rem;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rem;
+  color: #888888;
+  position: relative;
+  margin-left: 0.74rem;
+}
+.menu span:nth-of-type(1) {
+  margin: 0;
+}
+.menu span .icon {
+  position: absolute;
+  top: 0.15rem;
+  right: -0.4rem;
+  font-size: 0.25rem;
+  transform-origin: center 0.15rem;
+  transition: 0.2s;
+}
+.menu span.now {
+  color: #5fd8c2;
+}
+.menu span.now .icon {
+  transform: rotateZ(180deg);
+}
+.searchMenu {
+  width: 7.5rem;
+  box-sizing: border-box;
+  padding: 0.08rem 0;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: rgb(238, 238, 238, 0.9);
+  position: absolute;
+  top: 2.69rem;
+}
+.searchMenu div {
+	font-family: SourceHanSansCN-Regular;
+	font-size: 0.28rem;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rem;
+  color: #b2b2b2;
+  box-sizing: border-box;
+  padding: 0.155rem 0.166rem;
+  background-color: #ffffff;
+  border-radius: 0.04rem;
+  margin: 0.08rem 0.32rem;
+}
+.searchMenu div.active {
+  color: #00cca8;
+}
+.courseList {
+  width: 7.5rem;
+  height: 10.6487rem;
+  overflow: auto;
+  position: relative;
+  z-index: auto;
+}
+.courseList>div {
+  position: absolute;
+  width: 7.5rem;
+}
+.filler1 {
+  height: 2.6913rem;
+}
+.courseList .course {
+  width: 6.86rem;
+  height: 2.2rem;
+  margin: 0 auto 0.33rem;
+  background-color: #ffffff;
+	box-shadow: 0rem 0rem 0.18rem 0rem rgba(0, 0, 0, 0.13);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.courseList .course:nth-of-type(1) {
+  margin: 0.33rem auto 0.33rem;
+}
+.courseList .course>div:nth-of-type(1) {
+  height: 1.7rem;
+  width: 2.52rem;
+  border-right: 0.02rem solid #d7e0e4;
+  margin-left: 0.19rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding-right: 0.35rem;
+}
+.courseList .course>div:nth-of-type(2) {
+  width: 3.71rem;
+  height: 1.7rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: start;
+}
+.courseList .course .courseName {
+  width: 2.21rem;
+	height: 0.74rem;
+	font-family: SourceHanSansCN-Medium;
+	font-size: 0.27rem;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rem;
+	color: #353535;
+}
+.courseList .course>div:nth-of-type(1)>div:nth-of-type(2) {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 0.05rem;
+}
+.courseList .course .teacher {
+	height: 0.26rem;
+	font-family: SourceHanSansCN-Regular;
+	font-size: 0.28rem;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rem;
+  color: #888888;
+  line-height: 0.28rem;
+}
+.courseList .course .category {
+	height: 0.21rem;
+	font-family: SourceHanSansCN-Regular;
+	font-size: 0.22rem;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rem;
+  color: #cccccc;
+  line-height: 0.22rem;
+}
+.courseList .course>div:nth-of-type(2) span {
+  box-sizing: border-box;
+  font-family: SourceHanSansCN-Regular;
+	font-size: 0.22rem;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rem;
+  color: #ffffff;
+  line-height: 0.22rem;
+  margin-left: 0.39rem;
+  padding: 0.12rem 0.18rem;
+  background-color: #00cca8;
+	border-radius: 0.04rem;
+}
+.filler2{
+  height: 1.5708rem;
+  width: 7.5rem;
+}
+.user {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0.58rem auto 0;
+  border-radius: 50%;
+}
+.user img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.userName {
+  font-family: SourceHanSansCN-Medium;
+	font-size: 0.36rem;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 0.4rem;
+	letter-spacing: 0px;
+  color: #000000;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  margin: 0.66rem auto 0.48rem;
+}
+.box2 {
+  height: 0.6rem;
+  width: 7.5rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.box2 .interfaceSelection {
+  height: 0.6rem;
+  width: 6.7rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+.box2 .interfaceSelection .option {
+  width: 0.38rem;
+  height: 0.6rem;
+  line-height: 0.4rem;
+  text-align: center;
+	font-family: SourceHanSansCN-Regular;
+	font-size: 0.4rem;
+	font-weight: normal;
+	font-stretch: normal;
+  letter-spacing: 0rem;
+  display: flex;
+  justify-content: center;
+  white-space: nowrap;
+  color: #32d6b9;
+  box-sizing: border-box;
+  border-bottom: 0.02rem solid #32d6b9;
+}
+.box2 .interfaceSelection .option.unselected {
+  border: none;
+  color: #bababa;
+}
+.msg {
+  width: 7.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.msg img {
+  width: 4rem;
+}
+.msg div {
+  font-size: 0.3rem;
+  margin-top: 0.2rem;
+}
+.mainInterface {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1; 
+  background-color: white;
+  transform: translateX(-3.75rem);
+  transition: 0.2s;
+}
+.mainInterface.show {
+  transform: translateX(0);
+}
+.courseData>div:nth-of-type(1) {
+  width: 7.5rem;
+  height: 6.048rem;
+  background: linear-gradient(90deg, #00cca8 0%, #00adcc 100%);
+}
+.courseData>div:nth-of-type(2) {
+  width: 7.5rem;
+  height: 2.1rem;
+  background: rgba(0, 204, 168, 0.07) 
+}
+.courseInterface {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background-color: white;
+  transition: 0.2s;
+  transform: translateX(7.5rem);
+}
+.courseInterface.show {
+  transform: translateX(0);
+}
+.courseData {
+  position: relative;
+  height: 12.3694rem;
+  overflow: auto;
+}
+.courseData .courseName {
+  display: flex;
+  font-family: SourceHanSansCN-Regular;
+	font-size: 0.4rem;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rem;
+  color: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 7.5rem;
+  justify-content: center;
+  margin-top: 0.26rem;
+}
+.courseData .data1 {
+  width: 7.5rem;
+  height: 1.04rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 1.39rem;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+.courseData .data1>div {
+  width: 1rem;
+  height: 1.04rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  white-space: nowrap;
+  font-family: SourceHanSansCN-Regular;
+	font-size: 0.28rem;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rem;
+	color: #e6e6e6;
+}
+.courseData .data2 {
+  width: 6.86rem;
+	height: 1.3rem;
+	background-color: #ffffff;
+	box-shadow: 0rem 0.01rem 0.16rem 0rem rgba(0, 173, 204, 0.5);
+  border-radius: 0.08rem;
+  display: flex;
+  box-sizing: border-box;
+  padding: 0.15rem 0.36rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 2.88rem 0.32rem 0;
+}
+.courseData .data2>div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.courseData .data2>div>div {
+  width: 2rem;
+  display: flex;
+  justify-content: center;
+  white-space: nowrap;
+  font-family: SourceHanSansCN-Regular;
+	font-size: 0.28rem;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rem;
+	color: #353535;
+}
+.courseData .data2>div>div:nth-of-type(1) {
+  color: #b3b3b3;
+}
+.courseData .evaluation {
+  width: 6.86rem;
+	background-color: #ffffff;
+	box-shadow: 0rem 0.01rem 0.4rem 0rem rgba(0, 204, 168, 0.2);
+  border-radius: 0.08rem;
+  top: 0;
+  left: 0;
+  position: absolute;
+  margin: 4.46rem 0.32rem 0;
+}
+.courseData .evaluation>div:nth-of-type(1){
+  font-family: SourceHanSansCN-Regular;
+	font-size: 0.36rem;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rem;
+  color: #353535;
+  margin: 0.32rem auto 0;
+  display: flex;
+  justify-content: center;
+  width: 1rem;
+  white-space: nowrap;
+}
+.courseData .evaluation>div:nth-of-type(2) {
+  height: 0.93rem;
+  width: 4.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.32rem 1.13rem 0.32rem;
+}
+.courseData .evaluation>div:nth-of-type(2)>div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.courseData .evaluation>div:nth-of-type(2)>div>div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  font-family: SourceHanSansCN-Bold;
+	font-size: 0.4rem;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rem;
+	color: #353535;
+}
+.courseData .evaluation>div:nth-of-type(2)>div>div:nth-of-type(1) {
+  font-size: 0.36rem;
+}
+.courseData .evaluation>div:nth-of-type(3) {
+  display: flex;
+  justify-content: start;
+  text-align: center;
+}
+.courseData .evaluation>div:nth-of-type(3) span {
+  box-sizing: border-box;
+  padding: 0.1rem 0.2rem;
+  background-color: #00cca8;
+  border-radius: 0.04rem;
+  margin-left: 0.57rem;
+  margin-bottom: 0.48rem;
+  color: white;
+}
+.filler3 {
+  width: 7.5rem;
+  height: 0.9706rem;
+}
+.courseData>div:nth-of-type(7) {
+	font-family: SourceHanSansCN-Regular;
+	font-size: 0.4rem;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rem;
+  color: #353535;
+  padding: 0.32rem;
+  border-bottom: 0.03rem solid #e5e5e5;
+}
+.comments {
+  width: 7.5rem;
+}
+.comments .noComment {
+  font-family: SourceHanSansCN-Regular;
+	font-size: 0.28rem;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rem;
+  color: #353535;
+  text-align: center;
+  margin-top: 0.16rem;
+}
+.write {
+  position: fixed;
+  top: 10.83rem;
+  left: 5.9rem;
+}
+.write img {
+  width: 1.30rem;
+}
+.searchInterface {
+  width: 7.5rem;
+  height: 13.34rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background-color: white;
+  transition: 0.2s;
+  transform: translateX(7.5rem);
+}
+.searchInterface.show {
+  transform: translateX(0);
+}
+.search {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 0.17rem;
+}
+.search>div:nth-of-type(1) {
+  width: 5.6rem;
+	height: 0.6rem;
+	background-color: #ebf1f3;
+	border-radius: 0.1rem;
+}
+.search>div:nth-of-type(1) .icon {
+  font-size: 0.28rem;
+  color: #d9d9d9;
+  margin: 0.15rem 0.15rem 0 0.25rem;
+}
+.search>div:nth-of-type(1) input {
+  border: none;
+  outline: none;
+  background-color: #ebf1f3;
+  width: 4.86rem;
+  height: 0.32rem;
+  line-height: 0.34rem;
+  margin-top: 0.14rem;
+}
+.search>div:nth-of-type(1) input::placeholder {
+  color: #d9d9d9;
+  font-family: SourceHanSansCN-Regular;
+	font-size: 0.34rem;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rem;
+}
+.search>div:nth-of-type(2) {
+  font-family: SourceHanSansCN-Regular;
+	font-size: 0.36rem;
+	font-weight: 300;
+	font-stretch: normal;
+	letter-spacing: 0rem;
+	color: #00cca8;
+}
+.searchInterface>div:nth-of-type(1) {
+  width: 7.5rem;
+	background-color: #ffffff;
+	box-shadow: 0rem 0.01rem 0.16rem 0rem 
+    rgba(0, 0, 0, 0.13);
+  position: fixed;  
+}
+.filler4 {
+  width: 7.5rem;
+  height: 1.7412rem;
+}
+.popularSearch {
+  border-bottom: 0.04rem solid #f2f2f2;
+}
+.popularSearch>div:nth-of-type(1) {
+  font-family: SourceHanSansCN-Regular;
+	font-size: 0.36rem;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rem;
+  color: #353535;
+  margin: 0.42rem 0 0.32rem 0.31rem;
+}
+.popularSearch>div:nth-of-type(2) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+}
+.popularSearch>div:nth-of-type(2) span {
+  box-sizing: border-box;
+  padding: 0.16rem 0.34rem;
+  background-color: #f2f2f2;
+  border-radius: 0.08rem;
+  margin: 0.16rem 0.08rem 0.16rem 0.32rem;
+  font-family: SourceHanSansCN-Regular;
+	font-size: 0.28rem;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: -0.01rem;
+	color: #353535;
+}
+.searchHistory>div:nth-of-type(1) {
+  font-family: SourceHanSansCN-Regular;
+	font-size: 0.36rem;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rem;
+  color: #353535;
+  margin: 0.46rem 0 0.08rem 0.32rem;
+}
+.searchHistory>div:nth-of-type(2)>div {
+  font-family: SourceHanSansCN-Regular;
+	font-size: 0.28rem;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: -0.01rem;
+  color: #888888;
+  height: 1.06rem;
+  box-sizing: border-box;
+  border-bottom: 0.02rem solid #f2f2f2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.65rem 0 0.32rem;
+}
